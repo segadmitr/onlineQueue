@@ -15,8 +15,10 @@ namespace QueueApp.Infrastructure.Data
 
         #endregion
 
-        public UnitOfWork(DbContextOptions<ApplicationContext> options)
+        public UnitOfWork(string connectionString)
         {
+            var optionsBuilder = new DbContextOptionsBuilder<ApplicationContext>();
+            var options = optionsBuilder.UseSqlServer(connectionString).Options;
             _context = new ApplicationContext(options);
             _queues = new Lazy<IQueueRepository>(() => new QueueRepository(_context));
             _rooms = new Lazy<IRoomRepository>(() => new RoomRepository(_context));
