@@ -27,6 +27,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Core.Domain.csproj" />
+    <ProjectReference Include="..\DTO.Items\DTO.Items.csproj" />
     <ProjectReference Include="..\Infrastructure.Data\Infrastructure.Data.csproj" />
     <ProjectReference Include="..\Interfaces\Core.Interfaces.csproj" />
     <ProjectReference Include="..\Logic.Implementation\Logic.Implementation.csproj" />

@@ -3,27 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Queue\Service.csproj", "{04388C4A-65A9-4802-8DD9-99F2FFA5B53F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Queue\Service.csproj", "{04388C4A-65A9-4802-8DD9-99F2FFA5B53F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1C16E40E-3184-455F-8AF5-41967619D25C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Domain", "Domain\Core.Domain.csproj", "{165A492D-DD02-48F4-8122-1288DC9573E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Domain", "Domain\Core.Domain.csproj", "{165A492D-DD02-48F4-8122-1288DC9573E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Interfaces", "Interfaces\Core.Interfaces.csproj", "{ECE91074-B42E-4374-9955-F9FD5A810130}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Interfaces", "Interfaces\Core.Interfaces.csproj", "{ECE91074-B42E-4374-9955-F9FD5A810130}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{9EB4A40A-29AB-435E-9E34-D59BAA3122AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic.Interfaces", "Logic.Interfaces\Logic.Interfaces.csproj", "{DC94BD67-85B7-4469-8B64-ACC880B50B00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logic.Interfaces", "Logic.Interfaces\Logic.Interfaces.csproj", "{DC94BD67-85B7-4469-8B64-ACC880B50B00}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{CEC44340-17C0-430B-8F51-D27B4F8A3541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data", "Infrastructure.Data\Infrastructure.Data.csproj", "{85F28504-CD59-41AB-8BE1-4AFA7459AD07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Data", "Infrastructure.Data\Infrastructure.Data.csproj", "{85F28504-CD59-41AB-8BE1-4AFA7459AD07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic.Implementation", "Logic.Implementation\Logic.Implementation.csproj", "{DE769DDF-67CB-40AB-9C37-4F38081CC0D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logic.Implementation", "Logic.Implementation\Logic.Implementation.csproj", "{DE769DDF-67CB-40AB-9C37-4F38081CC0D7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{705CECCC-9116-4087-ABB4-EB5666880418}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic.Tests", "Logic.Tests\Logic.Tests.csproj", "{6E5099ED-C074-454E-AA3E-572EE4987B55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logic.Tests", "Logic.Tests\Logic.Tests.csproj", "{6E5099ED-C074-454E-AA3E-572EE4987B55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DTO", "DTO", "{AE4A9880-BA31-48B4-88D3-27777BCEEAE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO.Items", "DTO.Items\DTO.Items.csproj", "{A1BBE0F9-2A56-48FF-975D-00898B43388C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +63,10 @@ Global
 		{6E5099ED-C074-454E-AA3E-572EE4987B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E5099ED-C074-454E-AA3E-572EE4987B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E5099ED-C074-454E-AA3E-572EE4987B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1BBE0F9-2A56-48FF-975D-00898B43388C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1BBE0F9-2A56-48FF-975D-00898B43388C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1BBE0F9-2A56-48FF-975D-00898B43388C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1BBE0F9-2A56-48FF-975D-00898B43388C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +78,7 @@ Global
 		{85F28504-CD59-41AB-8BE1-4AFA7459AD07} = {CEC44340-17C0-430B-8F51-D27B4F8A3541}
 		{DE769DDF-67CB-40AB-9C37-4F38081CC0D7} = {9EB4A40A-29AB-435E-9E34-D59BAA3122AC}
 		{6E5099ED-C074-454E-AA3E-572EE4987B55} = {705CECCC-9116-4087-ABB4-EB5666880418}
+		{A1BBE0F9-2A56-48FF-975D-00898B43388C} = {AE4A9880-BA31-48B4-88D3-27777BCEEAE1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04CF9D51-55FC-40AF-872B-CD12BC5F1E91}
